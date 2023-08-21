@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+:root{
+    --white :white;
+    --gray :#cccccc;
+    --orange :#F75F00;
+    --accent :#0052F7;
+    --hv-accent :#0a329e;
+    --primary-bg :#0F0F0F;
+    --secendary-bg :#333333;
+    --fs-default :16px;
+    --primary-font : 'Freehand', cursive;
+    --secondary-font : "calibri",helvetica,Arial;
+    --mono-font:monospace;
+    --font-lg:30px;
+    --font-md:23px;
+}
+._main_{
+    height: 100%;
+    width: 100%;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    transition: opacity 300ms;
+}
+
+.link:hover{
+    opacity: .6;
+}
+.btn{
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    padding: .6rem 1rem;
+    border-radius: .3rem;
+    transition: background 300ms;
+}
+
+.btn:hover{
+    background: var(--hv-accent);
+}
+.link.to-bottom{
+    position: absolute;
+    background: var(--accent);
+    padding: 1rem;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    width: 1.7rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%,-50%);
+
+}
+.link.to-bottom img{
+    width: 1.5rem;
+}
+.link.to-bottom:hover{
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}

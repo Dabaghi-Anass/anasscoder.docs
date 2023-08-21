@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+:root{
+    --white :white;
+    --gray :#cccccc;
+    --orange :#F75F00;
+    --accent :#0052F7;
+    --primary-bg :#0F0F0F;
+    --secendary-bg :#333333;
+    --fs-default :16px;
+    --primary-font : 'Freehand', cursive;
+    --secondary-font : "calibri",helvetica,Arial;
+    --mono-font:monospace;
+    --font-lg:30px;
+    --font-md:23px;
+}
+html,body{
+    margin: 0;
+    height: 100%;
+    color: var(--white);
+    background: var(--primary-bg);
+    font-family: var(--secondary-font);
+    font-size: var(--fs-default);
+}
+header{
+    padding: 1rem;
+}
+.app-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--font-md);
+    font-family: var(--primary-font);
+}
+.logo-image{
+    width: 2.7rem;
+    margin-bottom: 5px;
+}
+.app-footer{
+    padding: 0 2rem;
+}
+.footer-content{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    border-top: 1px solid var(--gray);
+    padding-block: 1rem;
+}
+.footer-section{
+    padding: 1.5rem 2rem;
+}
+.footer-section:first-child{
+    border-right: 1px solid var(--gray);
+}
+.footer-content h3{
+    font-family: var(--mono-font);
+    font-size: var(--font-md);
+}
+@media (max-width : 800px){
+        .app-nav{
+            justify-content: center;
+        }
+        .links{
+            display: none;
+        }
+        .link.to-bottom{
+            display: flex !important;
+        }
+        .footer-content{
+            flex-direction: column-reverse;
+        }
+        .footer-section:first-child{
+            border-right: 0px;
+            border-top: 1px solid var(--gray);
+        }
+    }
