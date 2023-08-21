@@ -1,42 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/utils.css">
     <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <title>AnassCoder</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="_main_">
-        <header>
-            <nav class="app-nav">
-                <a href="#" class="logo">
-                    <img class="logo-image" src="assets/icons/logo.svg" alt="">
-                    <span class="site-name">AnassCoder</span>
-                </a>
-                <div class="links">
-                    <a href="#" class="btn">DOWNLOAD</a>
-                    <a href="#" class="link">DEVELOPER</a>
-                </div>
-            </nav>
-        </header>
-    </main>
-    <footer class="app-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact Developer</h3>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, veniam. Labore animi distinctio quae dolorem.</div>
-            </div>
-            <div class="footer-section">
-                <h3>Check Out Portofolio</h3>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, veniam. Labore animi distinctio quae dolorem.</div>
-            </div>
+      <header>
+        <nav class="app-nav">
+          <a href="#" class="logo">
+            <img class="logo-image" src="assets/icons/logo.svg" alt="">
+            <span class="site-name">AnassCoder</span>
+          </a>
+          <div class="links">
+            <a href="#download" class="btn">DOWNLOAD</a>
+            <a target="_blank" href="https://anass-dabaghi.vercel.app/" class="link">DEVELOPER</a>
+          </div>
+        </nav>
+      </header>
+      <section class="landing">
+        <div class="landing-page-item img">
+          <img src="assets/images/editor-intro.png" alt="editor image">
         </div>
-    </footer>
-    <a href="#" class="link to-bottom">
-        <img src="assets/icons/download.svg" alt="download">
+        <div class="landing-page-item text">
+          <p> Welcome To The Lightest <span class="method">CodeEditor</span><span class="parenthese">()</span><span class="brace">{</span>
+            <br>
+            <span class="directive">@Override</span>
+            <br>
+            <span class="keyword">public void</span><span class="method"> load</span><span class="parenthese">(</span><span class="parameter">Editor</span> editor<span class="parenthese">)</span>
+            <br><span class="brace">{</span>
+            <br><span class="directive">&nbsp;&nbsp;super</span><span class="method">.load</span><span class="parenthese">(</span><span class="keyword">new</span>
+            <span class="method"> AnassCoder</span><span class="parenthese">())</span>; <br>
+            <span class="brace">}}</span>
+          </p>
+        </div>
+      </section>
+      <section class="quote-section">
+        <p>
+            <span class="quote">
+                <img src="assets/images/quotesvg.svg" alt="">Revolutionize</span> your coding experience with our software
+            where intelligent assistance, seamless integration, customization
+            and high-speed searching converge to empower developers like <span class="quote">you
+                <img src="assets/images/quotesvg.svg" class="quote-inverted" alt=""></span>
+        
+        </p>
+        <img class="hearths" src="assets/images/hearth.svg" alt="">
+      </section>
+      <section class="col-2 app-section">
+        <div>
+            <h1>Intellisence</h1>
+            <p>Elevate your coding experience with our
+                advanced Intellisense and auto-complete
+                features. As you type, our software's smart
+                suggestions anticipate your next moves
+                method names and variable suggestions.</p>
+        </div>
+        <img class="image" src="assets/images/autocomplete.png" alt="">
+      </section>
+      <section class="col-2 app-section">
+        <div>
+            <h1>Terminal</h1>
+            <p>Seamlessly integrate your workflow with
+              our built-in terminal. No more switching between
+              applications - run your commands, scripts, and 
+              tests right within the editor. It's a time-saver that 
+              keeps everything in one place, enhancing your 
+              productivity and minimizing distractions</p>
+        </div>
+        <img class="image" src="assets/images/terminal.png" alt="">
+      </section>
+      <section class="col-2 app-section">
+        <div>
+            <h1>themes</h1>
+            <p>Personalize your coding environment with a multitude
+              of themes to choose from. Whether you prefer a dark
+               minimalistic look or a vibrant, colorful interface, we've
+               got you covered. Our software lets you code comfortably
+               with themes that suit your style and reduce eye strain</p>
+        </div>
+        <img class="image" src="assets/images/themes.png" alt="">
+      </section>
+      <section class="col-2 app-section">
+        <div>
+            <h1>search through files</h1>
+            <p>Don't waste time scrolling through endless lines of code
+              Our software employs a performant search algorithm that
+              navigate large projects and find what you're looking
+              for without delay</p>
+        </div>
+        <img class="image" src="assets/images/search.png" alt="">
+      </section>
+      <section class="download-section" id="download">
+            <h1>Choose Your Platform</h1>
+            <div class="col-2">
+              <div class="os">
+                  <img src="assets/images/windows.svg" alt="">
+                  <a class="btn os-btn" href="#" download="">
+                    <img src="assets/icons/download.svg" alt="">
+                    <span>Installer For Windows</span>
+                  </a>
+              </div>
+              <div class="os">
+                  <img src="assets/images/linux.svg" alt="">
+                  <a class="btn os-btn linux" download href="#">
+                    <img src="assets/icons/download.svg" alt="">
+                    <span>Installer For Linux</span>
+                  </a>
+              </div>
+            </div>
+      </section>
+
+      <footer class="app-footer" id="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact Developer</h3>
+            <div>
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100075508960200" alt="fb">
+                <img src="assets/icons/facebook.svg" alt="">
+              </a>
+              <a target="_blank" href="https://www.instagram.com/debbaghianass/" alt="ig">
+                <img src="assets/icons/insta.svg" alt="">
+              </a>
+              <a  target="_blank" href="https://www.linkedin.com/in/anass-dabaghi-5a51141b6/" alt="ln">
+                <img src="assets/icons/linkedin.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Check Out Portofolio</h3>
+            <div>
+              <a target="_blank" class="link" href="https://anass-dabaghi.vercel.app/" alt="fb">
+                <img src="assets/icons/portofolio.svg" alt="">
+                <span>Anass Dabaghi</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <a href="#download" class="link to-bottom">
+      <img src="assets/icons/download.svg" alt="download">
     </a>
-</body>
+  </body>
 </html>
