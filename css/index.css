@@ -171,6 +171,7 @@ span.quote{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
     gap: 3rem;
 }
 .download-section > div{
@@ -189,6 +190,7 @@ span.quote{
     justify-content: center;
     gap: 3rem;
     margin-block: 3rem;
+    padding: 1rem;
 }
 .os img{
     width: 200px;
