@@ -191,6 +191,7 @@ span.quote{
     gap: 3rem;
     margin-block: 3rem;
     padding: 1rem;
+    position: relative;
 }
 .os img{
     width: 200px;
@@ -221,6 +222,33 @@ span.quote{
     gap: 1rem;
 }
 /*phone specific styles*/
+.overlay{
+    position: absolute;
+    background: rgba(0 0 0 / 80%);
+    inset: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-lg);
+    text-transform: capitalize;
+    text-align: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.overlay img{
+    max-height: 100px;
+    height: 100px;
+    width: 100px;
+    aspect-ratio: 1;
+}
+.overlay span{
+    color: rgb(255, 0, 55);
+    background: black;
+    padding: 1rem;
+    width: 100%;
+}
 @media (max-width : 800px){
         .app-nav{
             justify-content: center;
